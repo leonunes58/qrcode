@@ -1,0 +1,12 @@
+nav {
+  display: flex;
+  justify-content: center;
+  padding: .5rem;
+  background-color: #2C67FF;
+}
+a {
+  text-decoration: none;
+}
+.instagram_perfil {
+  color: white;
+}

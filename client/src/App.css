@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#container_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    overflow-y: hidden;
+}
+.App {
+    height: 918px;
+}
+
