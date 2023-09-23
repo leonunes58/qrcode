@@ -1,0 +1,32 @@
+.title-main {
+    font-size: 98px;
+    color: #2C67FF;
+}
+.input_hrfc {
+    width: 70rem; height: 4rem;
+    border: 3px solid #2C67FF;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 3rem;
+    font-size: 2rem;
+    padding: 0 1rem;
+    color: #2C67FF;
+}
+.input_hrfc::placeholder {
+    opacity: .7;
+}
+.btn-generation {
+    width: 20rem; height: 4rem;
+    background-color: #2C67FF;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 1rem;
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn-generation:active {
+    opacity: .6;
+}

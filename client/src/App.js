@@ -1,8 +1,16 @@
 import './App.css';
 
 import { DownloadQrCode, InputHref, Navbar } from './Components';
+import { useDispatch } from 'react-redux';
+import { home } from './Redux/qrCode/slice'
+import { useEffect } from 'react';
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(home())
+  }, [])
+  
   return (
     <div className="App">
       <Navbar />

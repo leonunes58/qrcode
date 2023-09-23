@@ -12,4 +12,9 @@
 .App {
     height: 918px;
 }
+section:nth-child(1) {
+    margin: 5rem 6rem;
+    display: flex;
+    flex-direction: column;
+}
 
