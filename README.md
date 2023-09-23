@@ -14,4 +14,16 @@
 <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
 <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
 <img src="https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white"/>
-Gerador de QR code feito em Reactjs
+<h2>Inicialização</h2>
+<p>Após a clonagem execute os comandos em ordem:</p>
+<ul>
+  <li>npm i react-redux</li>
+  <li>npm i redux</li>
+  <li>npm i @reduxjs/toolkit/li>
+  <li>npm i redux-logger/li>
+  <li>npm start/li>
+</ul>
+<h2>Implementações futuras</h2>
+<p>O gerador de QR code ainda possui modificações futuras, será corrigido alguns bugs de inicialização, será adicionado download direto na máquina, como também a opção de baixar em SVG, entre outras adições.</p>
+<h2>Atualizações</h2>
+<p>A primeira versão com layout e possibilidade de gerar QR code funcionais está disponível para teste. Ainda possui alguns bugs. O projeto não está finalizado ainda!</p>
