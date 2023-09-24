@@ -19,9 +19,9 @@
 <ul>
   <li>npm i react-redux</li>
   <li>npm i redux</li>
-  <li>npm i @reduxjs/toolkit/li>
-  <li>npm i redux-logger/li>
-  <li>npm start/li>
+  <li>npm i @reduxjs/toolkit</li>
+  <li>npm i redux-logger</li>
+  <li>npm start</li>
 </ul>
 <h2>Implementações futuras</h2>
 <p>O gerador de QR code ainda possui modificações futuras, será corrigido alguns bugs de inicialização, será adicionado download direto na máquina, como também a opção de baixar em SVG, entre outras adições.</p>
