@@ -8,7 +8,7 @@ import DownloadIcon from '../img/botao-de-download.png'
 const DownloadQrCode = () => {
   const currentQrCode = useSelector(state => state.qrCodeReducer);
   const imgQRCode = () => {
-    if(currentQrCode) {
+    if(currentQrCode !== null) {
       return(
         <img src={currentQrCode.currentQrCode.qrcode} alt="QR code" className='img_qrcode'/>
       )
@@ -18,18 +18,24 @@ const DownloadQrCode = () => {
       )
     }
   }
+  const downloadImg = () => {
+    if(currentQrCode !== null) {
+      return (
+        <div>
+          <a href={currentQrCode.currentQrCode.qrcode}>
+            <button className='btn_download'>
+              <img src={DownloadIcon} alt="Icon Download" className='icon_Download' />
+              PNG
+            </button>
+          </a>
+        </div>
+      )
+    }
+  }
   return (
     <div id='DownloadQrCode'>
       {imgQRCode()}
-      <div>
-        <a href={currentQrCode.currentQrCode.qrcode}>
-          <button className='btn_download'>
-            <img src={DownloadIcon} alt="Icon Download" className='icon_Download' />
-            PNG
-          </button>
-        </a>
-        
-      </div>
+      {downloadImg()}
     </div>
   )
 }

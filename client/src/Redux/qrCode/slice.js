@@ -1,6 +1,6 @@
 import {createSlice} from '@reduxjs/toolkit';
 const initialState = {
-    currentQrCode: `http://api.qrserver.com/v1/create-qr-code/?data=!&size=400x400&bgcolor=fffff`
+    currentQrCode: `http://api.qrserver.com/v1/create-qr-code/?data=!&size=400x400&bgcolor=fffff`,
 }
 
 const qrCodeSlice = createSlice({

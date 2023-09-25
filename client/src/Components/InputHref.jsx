@@ -1,24 +1,24 @@
 import React, { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { createQrCode } from '../Redux/qrCode/slice'
 import './InputHref.css';
 const InputHref = () => {
   const [word, setWord] = useState('');
   const [size, setSize] = useState(400);
   const [bgColor, setBgColor] = useState("ffffff");
-  const [urlSite, setUrlSite] = useState('');
+  const [urlSite, setUrlSite] = useState(`http://api.qrserver.com/v1/create-qr-code/?data=${word}&size=${size}x${size}&bgcolor=${bgColor}`);
   const [qrCode, setQrCode] = useState('')
   const dispatch = useDispatch()
 
   useEffect(() => {
     setQrCode
- (`http://api.qrserver.com/v1/create-qr-code/?data=${word}!&size=${size}x${size}&bgcolor=${bgColor}`);
-  }, [word, size, bgColor])
-
+ (`http://api.qrserver.com/v1/create-qr-code/?data=${word}&size=${size}x${size}&bgcolor=${bgColor}`);
+  setWord(urlSite);
+  console.log(urlSite)
+  }, [word, urlSite, size, bgColor])
 
   const handleCreateQrCode = (e) => {
       e.preventDefault();
-      setWord(urlSite);
       dispatch(createQrCode({
         qrcode: qrCode
       }))
