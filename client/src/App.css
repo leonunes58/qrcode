@@ -23,3 +23,58 @@ section:nth-child(2) {
     height: 100%;
 }
 
+@media screen and (max-width: 900px) {
+    #container_main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+    section:nth-child(1) {
+        margin: 5rem 6rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .App {
+        height: 100%;
+        overflow-y:visible;
+    }
+}
+@media screen and (min-width: 420px) and (max-width: 720px) {
+    #container_main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+    section:nth-child(1) {
+        margin: 5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .App {
+        height: 100%;
+        overflow-y:visible;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 420px) {
+    #container_main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+    section:nth-child(1) {
+        margin: 5rem 1rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .App {
+        height: 100%;
+        overflow-y:visible;
+    }
+}
+

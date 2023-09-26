@@ -2,6 +2,9 @@
     font-size: 98px;
     color: #2C67FF;
 }
+form {
+    width: 100%;
+}
 .input_hrfc {
     width: 70rem; height: 4rem;
     border: 3px solid #2C67FF;
@@ -29,4 +32,73 @@
 }
 .btn-generation:active {
     opacity: .6;
+}
+
+@media screen and (max-width: 900px) {
+    .title-main {
+        font-size: 40px;
+        color: #2C67FF;
+    }
+    .input_hrfc {
+        width: 30rem; height: 4rem;
+        border: 3px solid #2C67FF;
+        border-radius: 20px;
+        outline: none;
+        margin-top: 3rem;
+        font-size: 2rem;
+        padding: 0 1rem;
+        color: #2C67FF;
+    }
+}
+@media screen and (min-width: 420px) and (max-width: 720px) {
+    .title-main {
+        font-size: 35px;
+        color: #2C67FF;
+    }
+    .input_hrfc {
+        width: 20rem; height: 3rem;
+        border: 3px solid #2C67FF;
+        border-radius: 20px;
+        outline: none;
+        margin-top: 3rem;
+        font-size: 2rem;
+        padding: 0 1rem;
+        color: #2C67FF;
+    }
+    .btn-generation {
+        width: 10rem; height: 3rem;
+        background-color: #2C67FF;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        margin-top: 1rem;
+        font-size: 15px;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 420px) {
+    .input_hrfc {
+        width: 15rem; height: 3rem;
+        border: 3px solid #2C67FF;
+        border-radius: 20px;
+        outline: none;
+        margin-top: 3rem;
+        font-size: 2rem;
+        padding: 0 1rem;
+        color: #2C67FF;
+    }
+    .btn-generation {
+        width: 10rem; height: 3rem;
+        background-color: #2C67FF;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        margin-top: 1rem;
+        font-size: 15px;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
 }

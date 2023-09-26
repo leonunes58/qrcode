@@ -42,3 +42,27 @@
 .icon_Download {
     width: 35px;
 }
+@media screen and (max-width: 900px) {
+    #DownloadQrCode {
+        padding: 5rem 0rem;
+        background-color: #2C67FF;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 420px) and (max-width: 720px) {
+    #DownloadQrCode div .btn_download {
+        width: 100px;
+        height: 3.5rem;
+        background-color: white;
+        outline: none;
+        border: none;
+        border-radius: 15px;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+}
