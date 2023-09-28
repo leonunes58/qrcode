@@ -24,6 +24,6 @@
   <li>npm start</li>
 </ul>
 <h2>Implementações futuras</h2>
-<p>O gerador de QR code ainda possui modificações futuras, será corrigido alguns bugs de inicialização, será adicionado download direto na máquina, como também a opção de baixar em SVG, entre outras adições.</p>
+<p>O gerador de QR code ainda possui modificações futuras, será adicionado download direto na máquina.</p>
 <h2>Atualizações</h2>
-<p>A primeira versão com layout e possibilidade de gerar QR code funcionais está disponível para teste. Ainda possui alguns bugs. O projeto não está finalizado ainda!</p>
+<p>Sistema está rodando sem bugs, mas ainda faltam adição de funcionalidades.</p>
