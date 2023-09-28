@@ -1,20 +1,22 @@
+//Import de bibliotecas
 import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { createQrCode } from '../Redux/qrCode/slice'
+//Import do CSS
 import './InputHref.css';
+
 const InputHref = () => {
   const [word, setWord] = useState('');
   const [size, setSize] = useState(400);
   const [bgColor, setBgColor] = useState("ffffff");
   const [urlSite, setUrlSite] = useState(`http://api.qrserver.com/v1/create-qr-code/?data=${word}&size=${size}x${size}&bgcolor=${bgColor}`);
-  const [qrCode, setQrCode] = useState('')
+  const [qrCode, setQrCode] = useState('');
+
   const dispatch = useDispatch()
 
   useEffect(() => {
-    setQrCode
- (`http://api.qrserver.com/v1/create-qr-code/?data=${word}&size=${size}x${size}&bgcolor=${bgColor}`);
-  setWord(urlSite);
-  console.log(urlSite)
+    setQrCode(`http://api.qrserver.com/v1/create-qr-code/?data=${word}&size=${size}x${size}&bgcolor=${bgColor}`);
+    setWord(urlSite);
   }, [word, urlSite, size, bgColor])
 
   const generationQrCode = () => {
@@ -24,9 +26,8 @@ const InputHref = () => {
   }
   const handleCreateQrCode = (e) => {
       e.preventDefault();
-      const verification = word.split(':')[0]
+      const verification = word.split(':')[0];
       verification === 'https' ? generationQrCode() : alert('O link que você está tentando gerar um QR code é inválido');
-      
   }
   return (
     <>

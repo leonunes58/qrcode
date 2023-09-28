@@ -2,7 +2,6 @@ import {createSlice} from '@reduxjs/toolkit';
 const initialState = {
     currentQrCode: '',
 }
-
 const qrCodeSlice = createSlice({
     name: 'qrcode',
     initialState,

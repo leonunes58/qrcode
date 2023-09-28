@@ -1,9 +1,11 @@
-import './App.css';
-
+//Import de Componentes
 import { DownloadQrCode, InputHref, Navbar } from './Components';
+//Import de bibliotecas
 import { useDispatch } from 'react-redux';
 import { home } from './Redux/qrCode/slice'
 import { useEffect } from 'react';
+//Import do CSS
+import './App.css';
 
 function App() {
   const dispatch = useDispatch();

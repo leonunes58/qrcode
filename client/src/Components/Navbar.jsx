@@ -1,4 +1,6 @@
+//Import de bibliotecas
 import React from 'react'
+//Import do CSS
 import './Navbar.css';
 
 const Navbar = () => {

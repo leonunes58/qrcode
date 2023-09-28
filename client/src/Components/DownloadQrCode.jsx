@@ -1,14 +1,18 @@
+//Import de bibliotecas
 import React from 'react';
 import { useSelector } from 'react-redux';
-
+import { saveAs } from 'file-saver';
+//Import de Imagens CSS
 import './DownloadQrCode.css';
-
+//Import de Imagens
 import DownloadIcon from '../img/botao-de-download.png'
 
 const DownloadQrCode = () => {
   const currentQrCode = useSelector(state => state.qrCodeReducer);
-  console.log(currentQrCode.currentQrCode)
-  console.log('=============')
+
+  const download = (typeFile) => {
+    typeFile === 'png' ? saveAs(currentQrCode.currentQrCode.qrcode, 'qrcode.png') : saveAs(currentQrCode.currentQrCode.qrcode, 'qrcode.jpg');
+  };
   const imgQRCode = () => {
     if(currentQrCode.currentQrCode !== '') {
       return(
@@ -19,21 +23,23 @@ const DownloadQrCode = () => {
         <strong className='msg_aviso'>Nenhum QR code Gerado</strong>
       )
     }
-  }
+  };
   const downloadImg = () => {
     if(currentQrCode !== '') {
       return (
         <div>
-          <a href={currentQrCode.currentQrCode.qrcode}>
-            <button className='btn_download'>
-              <img src={DownloadIcon} alt="Icon Download" className='icon_Download' />
-              PNG
-            </button>
-          </a>
+          <button className='btn_download' onClick={() => download('png')}>
+            <img src={DownloadIcon} alt="Icon Download" className='icon_Download'/>
+            PNG
+          </button>
+          <button className='btn_download' onClick={() => download('jpg')}>
+            <img src={DownloadIcon} alt="Icon Download" className='icon_Download'/>
+            JPG
+          </button>
         </div>
       )
     } 
-  }
+  };
   return (
     <div id='DownloadQrCode'>
       {imgQRCode()}
