@@ -6,6 +6,7 @@
 <ul>
   <li>Gerar o QR code a partir de uma url disponibilizada por um usuário</li>
   <li>Baixar o QR code em PNG</li>
+  <li>Baixar o QR code em JPG</li>
 </ul>
 <h2>Tecnologias</h2>
 <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white"/>
@@ -24,6 +25,6 @@
   <li>npm start</li>
 </ul>
 <h2>Implementações futuras</h2>
-<p>O gerador de QR code ainda possui modificações futuras, será adicionado download direto na máquina.</p>
+<p>Nenhuma</p>
 <h2>Atualizações</h2>
-<p>Sistema está rodando sem bugs, mas ainda faltam adição de funcionalidades.</p>
+<p>Sistema finalizado!</p>
