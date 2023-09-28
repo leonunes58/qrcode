@@ -8,6 +8,11 @@
     flex-direction: column;
     align-items: center;
 }
+.msg_aviso {
+    color: white;
+    padding: 0 .5rem;
+    font-size: 20px;
+}
 .img_qrcode {
     width: 300px;
     height: 300px;
@@ -24,12 +29,17 @@
 #DownloadQrCode div .btn_download {
     width: 136px;
     height: 3.5rem;
+    margin-top: 1rem;
     background-color: white;
     outline: none;
     border: none;
     border-radius: 15px;
     font-size: 20px;
     text-transform: uppercase;
+    color: #2C67FF;
+}
+.btn_download:active {
+    opacity: .6;
 }
 .btn_download {
     display: flex;

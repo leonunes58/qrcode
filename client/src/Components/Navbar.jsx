@@ -6,7 +6,7 @@ const Navbar = () => {
     <>
         <header id='header'>
             <nav>
-                <a href="##" className='instagram_perfil'>@gaucho.dev</a>
+                <a href="https://www.instagram.com/gaucho.dev/" className='instagram_perfil'>@gaucho.dev</a>
             </nav>
         </header>
     </>

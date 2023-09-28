@@ -17,11 +17,16 @@ const InputHref = () => {
   console.log(urlSite)
   }, [word, urlSite, size, bgColor])
 
+  const generationQrCode = () => {
+    dispatch(createQrCode({
+      qrcode: qrCode
+    }))
+  }
   const handleCreateQrCode = (e) => {
       e.preventDefault();
-      dispatch(createQrCode({
-        qrcode: qrCode
-      }))
+      const verification = word.split(':')[0]
+      verification === 'https' ? generationQrCode() : alert('O link que você está tentando gerar um QR code é inválido');
+      
   }
   return (
     <>

@@ -7,19 +7,21 @@ import DownloadIcon from '../img/botao-de-download.png'
 
 const DownloadQrCode = () => {
   const currentQrCode = useSelector(state => state.qrCodeReducer);
+  console.log(currentQrCode.currentQrCode)
+  console.log('=============')
   const imgQRCode = () => {
-    if(currentQrCode !== null) {
+    if(currentQrCode.currentQrCode !== '') {
       return(
         <img src={currentQrCode.currentQrCode.qrcode} alt="QR code" className='img_qrcode'/>
       )
     } else {
       return(
-        <p>Não possui nenhum QR code gerado</p>
+        <strong className='msg_aviso'>Nenhum QR code Gerado</strong>
       )
     }
   }
   const downloadImg = () => {
-    if(currentQrCode !== null) {
+    if(currentQrCode !== '') {
       return (
         <div>
           <a href={currentQrCode.currentQrCode.qrcode}>
@@ -30,7 +32,7 @@ const DownloadQrCode = () => {
           </a>
         </div>
       )
-    }
+    } 
   }
   return (
     <div id='DownloadQrCode'>
